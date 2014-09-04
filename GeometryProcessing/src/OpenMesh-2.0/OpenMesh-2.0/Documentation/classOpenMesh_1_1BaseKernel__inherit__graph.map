@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classOpenMesh_1_1ArrayKernel.html" title="Mesh kernel using arrays for mesh item storage." alt="" coords="357,5,517,35"/>
+<area shape="rect" id="node9" href="$classOpenMesh_1_1Kernel__OSG_1_1PropertyKernel.html" title="Helper class, extending functionaliy of OpenMesh::BaseKernel to OpenSG specific property adaptors..." alt="" coords="268,58,607,89"/>
+<area shape="rect" id="node11" href="$classOpenMesh_1_1Kernel__OSG_1_1PropertyKernel.html" title="OpenMesh::Kernel_OSG::PropertyKernel\&lt; MeshItems::Face::IsTriangle \&gt;" alt="" coords="213,111,661,142"/>
+<area shape="rect" id="node5" href="$classOpenMesh_1_1PolyConnectivity.html" title="Connectifity Class for polygonal meshes." alt="" coords="784,5,973,35"/>
+<area shape="rect" id="node7" href="$classOpenMesh_1_1TriConnectivity.html" title="Connectifity Class for Triangle Meshes." alt="" coords="1096,5,1275,35"/>
+<area shape="rect" id="node13" href="$classOpenMesh_1_1Kernel__OSG_1_1AttribKernelT.html" title="This class adds the standard properties to the mesh type." alt="" coords="711,111,1047,142"/>
+</map>

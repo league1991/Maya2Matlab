@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOpenMesh_1_1Kernel__OSG_1_1PropertyKernel.html" title="OpenMesh::Kernel_OSG::PropertyKernel\&lt; MeshItems::Face::IsTriangle \&gt;" alt="" coords="1608,83,2056,114"/>
+<area shape="rect" id="node4" href="$classOpenMesh_1_1BaseKernel.html" title="This class provides the basic property management like adding/removing properties and access to prope..." alt="" coords="1337,83,1495,114"/>
+<area shape="rect" id="node6" href="$classOpenMesh_1_1PropertyContainer.html" title="A a container for properties." alt="" coords="979,83,1176,114"/>
+<area shape="rect" id="node10" href="$classOpenMesh_1_1BaseProperty.html" title="Abstract class defining the basic interface of a dynamic property." alt="" coords="393,83,564,114"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="224,83,304,114"/>
+<area shape="rect" id="node14" title="STL class." alt="" coords="7,83,172,114"/>
+<area shape="rect" id="node16" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; TexCoord \&gt;" alt="" coords="1704,137,1960,167"/>
+<area shape="rect" id="node18" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TexCoord \&gt;" alt="" coords="1277,190,1555,221"/>
+<area shape="rect" id="node20" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="996,482,1159,513"/>
+<area shape="rect" id="node24" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1275,297,1557,327"/>
+<area shape="rect" id="node29" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Normal \&gt;" alt="" coords="1285,457,1547,487"/>
+<area shape="rect" id="node46" href="$structOpenMesh_1_1BasePropHandleT.html" title="Base property handle." alt="" coords="1301,510,1531,541"/>
+<area shape="rect" id="node51" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Point \&gt;" alt="" coords="1291,563,1541,594"/>
+<area shape="rect" id="node56" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Color \&gt;" alt="" coords="1291,622,1541,653"/>
+<area shape="rect" id="node22" href="$structOpenMesh_1_1EPropHandleT.html" title="OpenMesh::EPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1701,190,1963,221"/>
+<area shape="rect" id="node32" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1701,243,1963,274"/>
+<area shape="rect" id="node35" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1703,297,1961,327"/>
+<area shape="rect" id="node41" href="$structOpenMesh_1_1HPropHandleT.html" title="OpenMesh::HPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1701,350,1963,381"/>
+<area shape="rect" id="node27" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; Normal \&gt;" alt="" coords="1712,403,1952,434"/>
+<area shape="rect" id="node38" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Normal \&gt;" alt="" coords="1711,457,1953,487"/>
+<area shape="rect" id="node44" href="$structOpenMesh_1_1FPropHandleT.html" title="Handle representing a face property." alt="" coords="1728,511,1936,542"/>
+<area shape="rect" id="node49" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Point \&gt;" alt="" coords="1717,566,1947,597"/>
+<area shape="rect" id="node54" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; Color \&gt;" alt="" coords="1717,622,1947,653"/>
+<area shape="rect" id="node59" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Color \&gt;" alt="" coords="1717,675,1947,706"/>
+</map>

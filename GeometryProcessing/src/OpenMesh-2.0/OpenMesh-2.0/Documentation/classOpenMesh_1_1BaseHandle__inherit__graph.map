@@ -1,0 +1,50 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; bool \&gt;" alt="" coords="451,58,696,89"/>
+<area shape="rect" id="node9" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; cog_t \&gt;" alt="" coords="447,165,700,195"/>
+<area shape="rect" id="node13" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Color \&gt;" alt="" coords="448,271,699,302"/>
+<area shape="rect" id="node23" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; EdgeData \&gt;" alt="" coords="435,378,712,409"/>
+<area shape="rect" id="node27" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; FaceData \&gt;" alt="" coords="435,431,712,462"/>
+<area shape="rect" id="node31" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; float \&gt;" alt="" coords="451,485,696,515"/>
+<area shape="rect" id="node35" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Geometry::QuadricT\&lt; double \&gt; \&gt;" alt="" coords="372,538,775,569"/>
+<area shape="rect" id="node39" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; HalfedgeData \&gt;" alt="" coords="424,591,723,622"/>
+<area shape="rect" id="node43" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; HalfedgeHandle \&gt;" alt="" coords="417,645,729,675"/>
+<area shape="rect" id="node45" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; int \&gt;" alt="" coords="456,698,691,729"/>
+<area shape="rect" id="node47" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; level_t \&gt;" alt="" coords="444,751,703,782"/>
+<area shape="rect" id="node49" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Normal \&gt;" alt="" coords="443,805,704,835"/>
+<area shape="rect" id="node51" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; NormalType \&gt;" alt="" coords="428,858,719,889"/>
+<area shape="rect" id="node53" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Point \&gt;" alt="" coords="448,911,699,942"/>
+<area shape="rect" id="node55" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Scalar \&gt;" alt="" coords="444,965,703,995"/>
+<area shape="rect" id="node57" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; size_t \&gt;" alt="" coords="445,1018,701,1049"/>
+<area shape="rect" id="node59" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; StatusInfo \&gt;" alt="" coords="432,1071,715,1102"/>
+<area shape="rect" id="node61" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; std::pair\&lt; typename MeshType::VertexHandle, typename MeshType::VertexHandle \&gt; \&gt;" alt="" coords="216,1125,931,1155"/>
+<area shape="rect" id="node63" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TexCoord \&gt;" alt="" coords="435,1178,712,1209"/>
+<area shape="rect" id="node65" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TexCoord1D \&gt;" alt="" coords="427,1231,720,1262"/>
+<area shape="rect" id="node67" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TexCoord2D \&gt;" alt="" coords="427,1285,720,1315"/>
+<area shape="rect" id="node69" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TexCoord3D \&gt;" alt="" coords="427,1338,720,1369"/>
+<area shape="rect" id="node71" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; TextureIndex \&gt;" alt="" coords="425,1391,721,1422"/>
+<area shape="rect" id="node73" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename Mesh::Normal \&gt;" alt="" coords="392,1445,755,1475"/>
+<area shape="rect" id="node75" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename Mesh::Point \&gt;" alt="" coords="397,1498,749,1529"/>
+<area shape="rect" id="node77" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename mesh_t::Point \&gt;" alt="" coords="392,1551,755,1582"/>
+<area shape="rect" id="node79" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename MeshType::Point \&gt;" alt="" coords="383,1605,764,1635"/>
+<area shape="rect" id="node81" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename MeshType::VertexHandle \&gt;" alt="" coords="359,1658,788,1689"/>
+<area shape="rect" id="node83" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; VertexData \&gt;" alt="" coords="431,1711,716,1742"/>
+<area shape="rect" id="node85" href="$structOpenMesh_1_1BasePropHandleT.html" title="Base property handle." alt="" coords="459,1765,688,1795"/>
+<area shape="rect" id="node87" href="$structOpenMesh_1_1EdgeHandle.html" title="Handle for a edge entity." alt="" coords="492,1818,655,1849"/>
+<area shape="rect" id="node89" href="$structOpenMesh_1_1FaceHandle.html" title="Handle for a face entity." alt="" coords="492,1871,655,1902"/>
+<area shape="rect" id="node91" href="$structOpenMesh_1_1HalfedgeHandle.html" title="Handle for a halfedge entity." alt="" coords="481,1925,665,1955"/>
+<area shape="rect" id="node93" href="$structOpenMesh_1_1Subdivider_1_1Adaptive_1_1RuleHandleT.html" title="Handle template for adaptive composite subdividion rules." alt="" coords="411,1978,736,2009"/>
+<area shape="rect" id="node95" href="$structOpenMesh_1_1VDPM_1_1VHierarchyNodeHandle.html" title="Handle for vertex hierarchy nodes." alt="" coords="437,2031,709,2062"/>
+<area shape="rect" id="node97" href="$structOpenMesh_1_1VertexHandle.html" title="Handle for a vertex entity." alt="" coords="488,2085,659,2115"/>
+<area shape="rect" id="node5" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; bool \&gt;" alt="" coords="1057,5,1281,35"/>
+<area shape="rect" id="node7" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; bool \&gt;" alt="" coords="1057,58,1281,89"/>
+<area shape="rect" id="node11" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; cog_t \&gt;" alt="" coords="1053,111,1285,142"/>
+<area shape="rect" id="node15" href="$structOpenMesh_1_1EPropHandleT.html" title="OpenMesh::EPropHandleT\&lt; Color \&gt;" alt="" coords="1055,165,1284,195"/>
+<area shape="rect" id="node17" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; Color \&gt;" alt="" coords="1055,218,1284,249"/>
+<area shape="rect" id="node19" href="$structOpenMesh_1_1HPropHandleT.html" title="OpenMesh::HPropHandleT\&lt; Color \&gt;" alt="" coords="1055,271,1284,302"/>
+<area shape="rect" id="node21" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Color \&gt;" alt="" coords="1055,325,1284,355"/>
+<area shape="rect" id="node25" href="$structOpenMesh_1_1EPropHandleT.html" title="OpenMesh::EPropHandleT\&lt; EdgeData \&gt;" alt="" coords="1040,378,1299,409"/>
+<area shape="rect" id="node29" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; FaceData \&gt;" alt="" coords="1041,431,1297,462"/>
+<area shape="rect" id="node33" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; float \&gt;" alt="" coords="1056,485,1283,515"/>
+<area shape="rect" id="node37" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Geometry::QuadricT\&lt; double \&gt; \&gt;" alt="" coords="979,538,1360,569"/>
+<area shape="rect" id="node41" href="$structOpenMesh_1_1HPropHandleT.html" title="OpenMesh::HPropHandleT\&lt; HalfedgeData \&gt;" alt="" coords="1031,591,1308,622"/>
+</map>

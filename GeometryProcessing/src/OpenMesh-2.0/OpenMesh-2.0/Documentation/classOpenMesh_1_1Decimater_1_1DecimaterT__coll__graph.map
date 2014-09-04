@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; float \&gt;" alt="" coords="865,5,1092,35"/>
+<area shape="rect" id="node4" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; float \&gt;" alt="" coords="439,5,684,35"/>
+<area shape="rect" id="node6" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="149,58,312,89"/>
+<area shape="rect" id="node10" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; HalfedgeHandle \&gt;" alt="" coords="405,58,717,89"/>
+<area shape="rect" id="node29" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; int \&gt;" alt="" coords="444,111,679,142"/>
+<area shape="rect" id="node8" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; HalfedgeHandle \&gt;" alt="" coords="833,58,1124,89"/>
+<area shape="rect" id="node15" href="$classOpenMesh_1_1Decimater_1_1ModBaseT.html" title="Base class for all decimation modules." alt="" coords="395,174,728,205"/>
+<area shape="rect" id="node21" href="$classOpenMesh_1_1Utils_1_1HeapT.html" title="An efficient, highly customizable heap." alt="" coords="392,227,731,258"/>
+<area shape="rect" id="node23" title="STL class." alt="" coords="147,227,315,258"/>
+<area shape="rect" id="node27" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; int \&gt;" alt="" coords="872,111,1085,142"/>
+</map>
