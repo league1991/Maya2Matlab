@@ -312,14 +312,16 @@ MatlabData::Type MatlabData::getDataType( MObject&matObj )
 MatlabData::Type MatlabData::getDataType( Engine* eng, const char* varName )
 {
 	mxArray* matlabArray = engGetVariable(eng, varName);
+	MatlabData::Type type = MATLAB_UNKNOWN;
+
 	if (!matlabArray)
-		return MATLAB_UNKNOWN;
+		return type;
 	if (mxIsStruct(matlabArray))
-		return MATLAB_STRUCT;
+		type = MATLAB_STRUCT;
 	else if (MatrixData::isMatrix(matlabArray))
-		return MATLAB_MATRIX;
+		type = MATLAB_MATRIX;
 	mxDestroyArray(matlabArray);
-	return MATLAB_UNKNOWN;
+	return type;
 }
 
 MStatus MatlabData::checkAndGetData( MObject&matObj, MatlabData*& dat )
