@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$structOpenMesh_1_1DefaultTraits.html" title="Base class for all traits." alt="" coords="7,162,172,193"/>
+<area shape="rect" id="node3" href="$structAnalyzerTraits.html" title="AnalyzerTraits" alt="" coords="327,5,431,35"/>
+<area shape="rect" id="node5" href="$structMyTraits.html" title="MyTraits" alt="" coords="592,57,664,87"/>
+<area shape="rect" id="node7" href="$structOpenMesh_1_1Kernel__OSG_1_1Traits.html" title="Base class for all mesh traits using the OSGArrayKernelT." alt="" coords="276,109,481,139"/>
+<area shape="rect" id="node12" href="$structOpenMesh_1_1Subdivider_1_1Adaptive_1_1CompositeTraits.html" title="Adaptive Composite Subdivision framework." alt="" coords="221,162,536,193"/>
+<area shape="rect" id="node14" href="$structOpenMesh_1_1Subdivider_1_1Adaptive_1_1Traits.html" title="OpenMesh::Subdivider::Adaptive::Traits" alt="" coords="252,215,505,246"/>
+<area shape="rect" id="node16" href="$structOpenMesh_1_1Subdivider_1_1Uniform_1_1CompositeTraits.html" title="Uniform Composite Subdivision framework." alt="" coords="224,269,533,299"/>
+<area shape="rect" id="node18" href="$structOpenMesh_1_1VDPM_1_1MeshTraits.html" title="Mesh traits for View Dependent Progressive Meshes." alt="" coords="277,322,480,353"/>
+<area shape="rect" id="node9" href="$structMeshTraits.html" title="MeshTraits" alt="" coords="585,110,671,141"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOpenMesh_1_1BaseKernel.html" title="This class provides the basic property management like adding/removing properties and access to prope..." alt="" coords="96,558,253,589"/>
+<area shape="rect" id="node4" href="$classOpenMesh_1_1PropertyContainer.html" title="A a container for properties." alt="" coords="76,385,273,415"/>
+<area shape="rect" id="node8" href="$classOpenMesh_1_1BaseProperty.html" title="Abstract class defining the basic interface of a dynamic property." alt="" coords="89,187,260,218"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="135,89,215,119"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="92,6,257,37"/>
+</map>

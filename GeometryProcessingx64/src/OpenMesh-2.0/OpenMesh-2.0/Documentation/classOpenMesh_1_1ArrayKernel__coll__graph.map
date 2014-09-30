@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOpenMesh_1_1BaseKernel.html" title="This class provides the basic property management like adding/removing properties and access to prope..." alt="" coords="1412,83,1569,114"/>
+<area shape="rect" id="node4" href="$classOpenMesh_1_1PropertyContainer.html" title="A a container for properties." alt="" coords="1021,83,1219,114"/>
+<area shape="rect" id="node8" href="$classOpenMesh_1_1BaseProperty.html" title="Abstract class defining the basic interface of a dynamic property." alt="" coords="393,83,564,114"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="224,83,304,114"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="7,83,172,114"/>
+<area shape="rect" id="node14" href="$structOpenMesh_1_1ArrayItems.html" title="Definition of mesh items for use in the ArrayKernel." alt="" coords="1412,137,1569,167"/>
+<area shape="rect" id="node16" href="$structOpenMesh_1_1EPropHandleT.html" title="OpenMesh::EPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1360,190,1621,221"/>
+<area shape="rect" id="node18" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; StatusInfo \&gt;" alt="" coords="979,270,1261,301"/>
+<area shape="rect" id="node24" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1360,243,1621,274"/>
+<area shape="rect" id="node27" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1361,297,1620,327"/>
+<area shape="rect" id="node32" href="$structOpenMesh_1_1HPropHandleT.html" title="OpenMesh::HPropHandleT\&lt; StatusInfo \&gt;" alt="" coords="1360,350,1621,381"/>
+<area shape="rect" id="node20" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="684,270,847,301"/>
+</map>

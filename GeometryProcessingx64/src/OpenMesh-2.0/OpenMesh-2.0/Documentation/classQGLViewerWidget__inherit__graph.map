@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMeshViewerWidgetT.html" title="MeshViewerWidgetT\&lt; M \&gt;" alt="" coords="103,86,279,117"/>
+<area shape="rect" id="node9" href="$classMeshViewerWidgetT.html" title="MeshViewerWidgetT\&lt; Mesh \&gt;" alt="" coords="303,86,500,117"/>
+<area shape="rect" id="node22" href="$classMeshViewerWidgetT.html" title="MeshViewerWidgetT\&lt; MyMesh \&gt;" alt="" coords="524,86,737,117"/>
+<area shape="rect" id="node5" href="$classOpenMesh_1_1VDPMSynthesizerViewerWidget.html" title="OpenMesh::VDPMSynthesizerViewerWidget\&lt; VDPMMesh \&gt;" alt="" coords="5,166,376,197"/>
+<area shape="rect" id="node11" href="$classMeshViewerWidget.html" title="MeshViewerWidget" alt="" coords="481,166,615,197"/>
+<area shape="rect" id="node13" href="$classDecimaterViewerWidget.html" title="DecimaterViewerWidget" alt="" coords="213,246,373,277"/>
+<area shape="rect" id="node15" href="$classProgViewerWidget.html" title="ProgViewerWidget" alt="" coords="397,246,525,277"/>
+<area shape="rect" id="node17" href="$classVDPMClientViewerWidget.html" title="VDPMClientViewerWidget" alt="" coords="549,246,720,277"/>
+</map>

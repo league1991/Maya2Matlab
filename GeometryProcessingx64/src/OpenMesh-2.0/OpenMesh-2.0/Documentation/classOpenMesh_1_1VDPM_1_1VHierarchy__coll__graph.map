@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$classOpenMesh_1_1VDPM_1_1VHierarchyNode.html" title="Vertex hierarchy node." alt="" coords="673,73,905,103"/>
+<area shape="rect" id="node6" href="$structOpenMesh_1_1VertexHandle.html" title="Handle for a vertex entity." alt="" coords="271,5,441,35"/>
+<area shape="rect" id="node8" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,30,168,61"/>
+<area shape="rect" id="node10" href="$structOpenMesh_1_1VDPM_1_1VHierarchyNodeHandle.html" title="Handle for vertex hierarchy nodes." alt="" coords="220,58,492,89"/>
+<area shape="rect" id="node13" href="$classOpenMesh_1_1VDPM_1_1VHierarchyNodeIndex.html" title="Index of vertex hierarchy node." alt="" coords="224,154,488,185"/>
+</map>

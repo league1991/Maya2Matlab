@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOpenMesh_1_1IO_1_1BaseReader.html" title="Base class for reader modules." alt="" coords="419,5,605,35"/>
+<area shape="rect" id="node4" href="$structOpenMesh_1_1IO_1_1OMFormat_1_1Chunk_1_1Header.html" title="OpenMesh::IO::OMFormat::Chunk::Header" alt="" coords="377,58,647,89"/>
+<area shape="rect" id="node6" href="$classOpenMesh_1_1IO_1_1OMFormat_1_1Chunk_1_1PropertyName.html" title="OpenMesh::IO::OMFormat::Chunk::PropertyName" alt="" coords="356,111,668,142"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="224,111,304,142"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="7,111,172,142"/>
+<area shape="rect" id="node12" href="$structOpenMesh_1_1IO_1_1OMFormat_1_1Header.html" title="OpenMesh::IO::OMFormat::Header" alt="" coords="399,165,625,195"/>
+</map>

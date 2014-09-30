@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structOpenMesh_1_1VertexHandle.html" title="Handle for a vertex entity." alt="" coords="5,89,176,119"/>
+<area shape="rect" id="node4" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="200,6,363,37"/>
+<area shape="rect" id="node6" href="$structOpenMesh_1_1FaceHandle.html" title="Handle for a face entity." alt="" coords="200,89,363,119"/>
+<area shape="rect" id="node9" href="$structOpenMesh_1_1HalfedgeHandle.html" title="Handle for a halfedge entity." alt="" coords="387,89,571,119"/>
+</map>

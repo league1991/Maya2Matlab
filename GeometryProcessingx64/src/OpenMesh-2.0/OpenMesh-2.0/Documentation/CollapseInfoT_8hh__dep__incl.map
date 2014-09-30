@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$ModBaseT_8hh.html" title="Base class for all decimation modules." alt="" coords="1687,86,2297,117"/>
+<area shape="rect" id="node5" href="$DecimaterT_8hh.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/DecimaterT.hh" alt="" coords="23,166,636,197"/>
+<area shape="rect" id="node11" href="$ModNormalFlippingT_8hh.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModNormalFlippingT.hh" alt="" coords="660,166,1327,197"/>
+<area shape="rect" id="node14" href="$ModQuadricT_8hh.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModQuadricT.hh" alt="" coords="1351,166,1977,197"/>
+<area shape="rect" id="node19" href="$ModProgMeshT_8hh.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModProgMeshT.hh" alt="" coords="2001,166,2641,197"/>
+<area shape="rect" id="node23" href="$ModIndependentSetsT_8hh_source.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModIndependentSetsT.hh" alt="" coords="2665,166,3343,197"/>
+<area shape="rect" id="node25" href="$ModRoundnessT_8hh.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModRoundnessT.hh" alt="" coords="3367,166,4012,197"/>
+<area shape="rect" id="node7" href="$DecimaterViewerWidget_8hh_source.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Apps/Decimating/DecimaterViewerWidget.hh" alt="" coords="643,246,1333,277"/>
+<area shape="rect" id="node9" href="$DecimaterT_8cc.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/DecimaterT.cc" alt="" coords="5,246,619,277"/>
+<area shape="rect" id="node17" href="$ModQuadricT_8cc.html" title="Bodies of template member function." alt="" coords="1357,246,1984,277"/>
+<area shape="rect" id="node21" href="$ModProgMeshT_8cc.html" title="/data1/home1/moebius/projects/release/OpenMesh&#45;2.0/src/OpenMesh/Tools/Decimater/ModProgMeshT.cc" alt="" coords="2008,246,2648,277"/>
+</map>

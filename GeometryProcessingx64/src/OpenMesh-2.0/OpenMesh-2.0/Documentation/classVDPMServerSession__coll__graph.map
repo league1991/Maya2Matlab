@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$classServerSideVDPM.html" title="ServerSideVDPM" alt="" coords="1723,149,1845,179"/>
+<area shape="rect" id="node6" href="$classOpenMesh_1_1VDPM_1_1VHierarchy.html" title="Keeps the vertex hierarchy build during analyzing a progressive mesh." alt="" coords="1309,73,1512,103"/>
+<area shape="rect" id="node28" href="$classOpenMesh_1_1VDPM_1_1VHierarchyWindow.html" title="OpenMesh::VDPM::VHierarchyWindow" alt="" coords="1660,95,1908,126"/>
+<area shape="rect" id="node10" href="$classOpenMesh_1_1VDPM_1_1VHierarchyNode.html" title="Vertex hierarchy node." alt="" coords="673,73,905,103"/>
+<area shape="rect" id="node12" href="$structOpenMesh_1_1VertexHandle.html" title="Handle for a vertex entity." alt="" coords="271,5,441,35"/>
+<area shape="rect" id="node14" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,30,168,61"/>
+<area shape="rect" id="node16" href="$structOpenMesh_1_1VDPM_1_1VHierarchyNodeHandle.html" title="Handle for vertex hierarchy nodes." alt="" coords="220,58,492,89"/>
+<area shape="rect" id="node19" href="$classOpenMesh_1_1VDPM_1_1VHierarchyNodeIndex.html" title="Index of vertex hierarchy node." alt="" coords="224,154,488,185"/>
+<area shape="rect" id="node31" href="$classOpenMesh_1_1VDPM_1_1ViewingParameters.html" title="OpenMesh::VDPM::ViewingParameters" alt="" coords="1659,255,1909,286"/>
+<area shape="rect" id="node33" href="$classOpenMesh_1_1VDPM_1_1Plane3d.html" title="ax + by + cz + d = 0" alt="" coords="1317,255,1504,286"/>
+</map>

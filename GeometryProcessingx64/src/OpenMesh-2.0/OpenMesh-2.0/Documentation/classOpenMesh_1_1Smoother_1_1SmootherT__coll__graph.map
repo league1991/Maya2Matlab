@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOpenMesh_1_1Utils_1_1Noncopyable.html" title="This class demonstrates the non copyable idiom." alt="" coords="627,5,829,35"/>
+<area shape="rect" id="node4" href="$classOpenMesh_1_1PolyMesh__ArrayKernelT.html" title="Polygonal mesh based on the ArrayKernel." alt="" coords="584,58,872,89"/>
+<area shape="rect" id="node6" href="$classOpenMesh_1_1PolyMeshT.html" title="Base type for a polygonal mesh." alt="" coords="220,58,532,89"/>
+<area shape="rect" id="node8" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Point \&gt;" alt="" coords="613,111,843,142"/>
+<area shape="rect" id="node10" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Point \&gt;" alt="" coords="251,111,501,142"/>
+<area shape="rect" id="node12" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,165,168,195"/>
+<area shape="rect" id="node16" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; NormalType \&gt;" alt="" coords="231,165,521,195"/>
+<area shape="rect" id="node21" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; bool \&gt;" alt="" coords="253,218,499,249"/>
+<area shape="rect" id="node14" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; NormalType \&gt;" alt="" coords="593,165,863,195"/>
+<area shape="rect" id="node19" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; bool \&gt;" alt="" coords="616,218,840,249"/>
+</map>

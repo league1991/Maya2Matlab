@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classMeshViewerWidgetT.html" title="MeshViewerWidget" alt="" coords="1488,105,1621,135"/>
+<area shape="rect" id="node4" href="$classQGLViewerWidget.html" title="QGLViewerWidget" alt="" coords="1111,74,1236,105"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="265,10,345,41"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="7,10,172,41"/>
+<area shape="rect" id="node17" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; typename Mesh::Point \&gt;" alt="" coords="1008,134,1339,165"/>
+<area shape="rect" id="node19" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename Mesh::Point \&gt;" alt="" coords="488,159,840,190"/>
+<area shape="rect" id="node21" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="224,159,387,190"/>
+<area shape="rect" id="node23" href="$classOpenMesh_1_1IO_1_1Options.html" title="Set options for reader/writer modules." alt="" coords="1093,187,1253,218"/>
+</map>
