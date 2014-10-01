@@ -378,7 +378,10 @@ bool MatlabNode::receiveOutputFromMatlab( Engine* eng, MPlug& outputPlug, MStatu
 		int logicalIdx     = ithElementPlug.logicalIndex(s);
 		MString outName = getOutputArrayName(logicalIdx);
 		int     outNameLength = 0;
-		MatlabData::Type type = MatlabData::getDataType(eng, outName.asChar(outNameLength));
+		mxArray* matlabArray = engGetVariable(eng, outName.asChar(outNameLength));
+		if (!matlabArray)
+			return false;
+		MatlabData::Type type = MatlabData::getDataType(matlabArray);
 		MFnPluginData valFn;
 		MObject       valObj;
 		switch (type)
@@ -397,10 +400,10 @@ bool MatlabNode::receiveOutputFromMatlab( Engine* eng, MPlug& outputPlug, MStatu
 			return false;
 
 		// get data from matlab
-		if (!pMat->getDataFromMatlab(eng, outName))
-			return false;
+		if (pMat->getDataFromMatlab(matlabArray))
+			ithElementPlug.setValue(valObj);
 
-		ithElementPlug.setValue(valObj);
+		mxDestroyArray(matlabArray);
 	}
 	return true;
 }

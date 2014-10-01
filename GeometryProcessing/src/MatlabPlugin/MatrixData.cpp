@@ -952,6 +952,7 @@ bool AbstractData::getFromEngine( Engine* eng, const char* varName )
 	return res;
 }
 
+
 bool AbstractData::sendToEngine( Engine* eng, const char* varName )
 {
 	if (isEmpty())

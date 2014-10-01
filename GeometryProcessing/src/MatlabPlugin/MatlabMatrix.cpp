@@ -172,6 +172,12 @@ bool MatlabMatrix::getDataFromMatlab( Engine* eng, const MString& varName )
 	return res;
 }
 
+bool MatlabMatrix::getDataFromMatlab(mxArray* matlabArray)
+{
+	clearData();
+	bool res = m_D.getFromArray(matlabArray);
+	return res;
+}
 
 MStatus MatlabMatrix::createMatrixObject( MObject& obj, MatlabMatrix*& matPtr )
 {
@@ -250,6 +256,11 @@ bool MatlabStruct::getDataFromMatlab( Engine* eng, const MString& varName )
 	return m_D.getFromEngine(eng, varName.asChar(l));
 }
 
+bool MatlabStruct::getDataFromMatlab(mxArray* matlabArray)
+{
+	clearData();
+	return m_D.getFromArray(matlabArray);
+}
 MStatus MatlabStruct::createStructObject( MObject& obj, MatlabStruct*& matPtr )
 {
 	MStatus s;
@@ -321,6 +332,17 @@ MatlabData::Type MatlabData::getDataType( Engine* eng, const char* varName )
 	else if (MatrixData::isMatrix(matlabArray))
 		type = MATLAB_MATRIX;
 	mxDestroyArray(matlabArray);
+	return type;
+}
+MatlabData::Type MatlabData::getDataType(mxArray* matlabArray)
+{
+	MatlabData::Type type = MATLAB_UNKNOWN;
+	if (!matlabArray)
+		return type;
+	if (mxIsStruct(matlabArray))
+		type = MATLAB_STRUCT;
+	else if (MatrixData::isMatrix(matlabArray))
+		type = MATLAB_MATRIX;
 	return type;
 }
 

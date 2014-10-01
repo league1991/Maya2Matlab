@@ -25,10 +25,12 @@ public:
 
 	virtual bool            sendDataToMatlab(Engine* eng, const MString& varName)=0;
 	virtual bool            getDataFromMatlab( Engine* eng, const MString& varName )=0;
+	virtual bool			getDataFromMatlab(mxArray* matlabArray)=0;
 
 	static Type             getDataType(MObject&matObj);
 	static MStatus          checkAndGetData( MObject&matObj, MatlabData*& dat);
 	static Type             getDataType(Engine* eng, const char* varName);
+	static Type				getDataType(mxArray* matlabArray);
 protected:
 };
 class MatlabMatrix: public MatlabData
@@ -65,7 +67,7 @@ public:
 
 	bool            sendDataToMatlab(Engine* eng, const MString& varName);
 	bool            getDataFromMatlab( Engine* eng, const MString& varName );
-
+	bool			getDataFromMatlab(mxArray* matlabArray);
 	// create maya object of MatlabMatrix and retrieve its data
 	// matPtr points to the data held in obj
 	static MStatus  createMatrixObject(MObject& obj, MatlabMatrix*& matPtr);
@@ -122,7 +124,7 @@ public:
 
 	bool            sendDataToMatlab(Engine* eng, const MString& varName);
 	bool            getDataFromMatlab( Engine* eng, const MString& varName );
-
+	bool			getDataFromMatlab(mxArray* matlabArray);
 	// create maya object of MatlabMatrix and retrieve its data
 	// matPtr points to the data held in obj
 	static MStatus  createStructObject(MObject& obj, MatlabStruct*& matPtr);
