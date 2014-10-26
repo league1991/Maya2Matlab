@@ -234,7 +234,7 @@ MStatus MeshToMatrixNode::computeVFIncidenceMatrix(MObject& meshObj)
 
 	// fill vertex array
 	std::vector<unsigned> dataArray;
-	std::vector<int>      rowIDArray;
+	std::vector<mwIndex>  rowIDArray;
 	mwIndex   *   colRangeArray = new mwIndex[nFaces+1];
 	colRangeArray[0] = 0;
 	mwIndex nNonZeroElements = 0;
@@ -257,9 +257,9 @@ MStatus MeshToMatrixNode::computeVFIncidenceMatrix(MObject& meshObj)
 	CHECK_STATUS(s);
 	MatlabMatrix* pMat = (MatlabMatrix*)valFn.data(&s);
 	CHECK_STATUS(s);
-	mwIndex* d   = new mwIndex[nNonZeroElements];
+	unsigned* d   = new unsigned[nNonZeroElements];
 	mwIndex   * rID   = new mwIndex[nNonZeroElements];
-	memcpy(d,   &dataArray[0],  sizeof(mwIndex)*nNonZeroElements);
+	memcpy(d,   &dataArray[0],  sizeof(unsigned)*nNonZeroElements);
 	memcpy(rID, &rowIDArray[0], sizeof(mwIndex)*nNonZeroElements);
 	pMat->getMatrix().setSparseDataPtr(	d,rID, colRangeArray, 
 										nVertices, nFaces, nNonZeroElements, nFaces+1, MatrixData::DT_UINT32);
