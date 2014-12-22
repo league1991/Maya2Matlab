@@ -2,7 +2,7 @@ GeometryProcessing      插件的c++代码
 2013.rar                插件的工具架mel脚本，以及显示图标
 AETemplates.rar		插件的界面脚本
 Examples.rar		示例程序
-
+ 
 0. 安装matlab，并把 MATLAB\R2012b\bin\win32这个目录的路径加入Path环境变量，这样才能让maya找到matlab的dll
 1. 配置好环境（包括：Qt、Matlab、Maya的头文件、库文件路径），编译MatlabPlugin项目，生成MatlabPlugin.mll文件， 工程中的ExeClient/ExeServer与Maya插件没有直接关系，工程ClothExe是一个示例，旨在演示在Maya通过Socket与外部C++程序通信。
 2. 把2013.rar内的文件解压到 我的文档\maya （win7是 文档\maya）下面，覆盖掉2013文件夹（如果是中文版，可能2013文件夹不直接在maya目录下，但只要找到它覆盖掉就行）
