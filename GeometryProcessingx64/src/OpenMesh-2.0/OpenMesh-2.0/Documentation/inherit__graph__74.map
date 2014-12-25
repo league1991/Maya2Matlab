@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classOpenMesh_1_1IO_1_1BaseReader.html" title="Base class for reader modules." alt="" coords="5,111,192,142"/>
-<area shape="rect" id="node3" href="$classOpenMesh_1_1IO_1_1__OBJReader__.html" title="Implementation of the OBJ format reader." alt="" coords="241,5,436,35"/>
-<area shape="rect" id="node5" href="$classOpenMesh_1_1IO_1_1__OFFReader__.html" title="Implementation of the OFF format reader." alt="" coords="241,58,436,89"/>
-<area shape="rect" id="node7" href="$classOpenMesh_1_1IO_1_1__OMReader__.html" title="Implementation of the OM format reader." alt="" coords="244,111,433,142"/>
-<area shape="rect" id="node9" href="$classOpenMesh_1_1IO_1_1__PLYReader__.html" title="Implementation of the PLY format reader." alt="" coords="241,165,436,195"/>
-<area shape="rect" id="node11" href="$classOpenMesh_1_1IO_1_1__STLReader__.html" title="Implementation of the STL format reader." alt="" coords="243,218,435,249"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structOpenMesh_1_1FPropHandleT.html" title="OpenMesh::FPropHandleT\&lt; bool \&gt;" alt="" coords="717,5,941,35"/>
-<area shape="rect" id="node4" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; bool \&gt;" alt="" coords="304,5,549,35"/>
-<area shape="rect" id="node6" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,5,168,35"/>
-<area shape="rect" id="node8" href="$classOpenMesh_1_1PolyMesh__ArrayKernelT.html" title="Polygonal mesh based on the ArrayKernel." alt="" coords="685,58,973,89"/>
-<area shape="rect" id="node10" href="$classOpenMesh_1_1PolyMeshT.html" title="Base type for a polygonal mesh." alt="" coords="271,58,583,89"/>
-<area shape="rect" id="node14" title="STL class." alt="" coords="369,111,484,142"/>
-</map>

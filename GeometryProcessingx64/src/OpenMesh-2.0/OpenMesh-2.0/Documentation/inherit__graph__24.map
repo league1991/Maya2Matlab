@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classOpenMesh_1_1BaseProperty.html" title="Abstract class defining the basic interface of a dynamic property." alt="" coords="7,85,177,115"/>
-<area shape="rect" id="node3" href="$classOpenMesh_1_1Kernel__OSG_1_1oPropertyT.html" title="Property adaptor for OpenSG GeoProperties." alt="" coords="228,5,561,35"/>
-<area shape="rect" id="node7" href="$classOpenMesh_1_1PropertyT.html" title="Default property class for any type T." alt="" coords="304,58,485,89"/>
-<area shape="rect" id="node9" href="$classOpenMesh_1_1PropertyT_3_01bool_01_4.html" title="OpenMesh::PropertyT\&lt; bool \&gt;" alt="" coords="296,111,493,142"/>
-<area shape="rect" id="node11" href="$classOpenMesh_1_1PropertyT_3_01std_1_1string_01_4.html" title="OpenMesh::PropertyT\&lt; std::string \&gt;" alt="" coords="279,165,511,195"/>
-<area shape="rect" id="node5" href="$classOpenMesh_1_1Kernel__OSG_1_1FP_1_1GeoIndicesUI32.html" title="Adaptor for osg::GeoIndicesUI32." alt="" coords="612,5,983,35"/>
-</map>

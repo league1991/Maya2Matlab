@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classOpenMesh_1_1Decimater_1_1ModIndependentSetsT.html" title="Lock one&#45;ring around remaining vertex after a collapse to prevent further collapses of halfedges inci..." alt="" coords="389,5,792,35"/>
-<area shape="rect" id="node5" href="$classOpenMesh_1_1Decimater_1_1ModProgMeshT.html" title="Collect progressive mesh information while decimating." alt="" coords="409,58,772,89"/>
-<area shape="rect" id="node7" href="$classOpenMesh_1_1Decimater_1_1ModQuadricT.html" title="Mesh decimation module computing collapse priority based on error quadrics." alt="" coords="416,111,765,142"/>
-<area shape="rect" id="node9" href="$classOpenMesh_1_1Decimater_1_1ModRoundnessT.html" title="Compute error value based on roundness criteria." alt="" coords="405,165,776,195"/>
-</map>

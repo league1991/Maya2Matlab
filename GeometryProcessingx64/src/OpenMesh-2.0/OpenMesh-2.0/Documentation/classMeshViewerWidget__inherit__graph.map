@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node14" href="$classDecimaterViewerWidget.html" title="DecimaterViewerWidget" alt="" coords="5,246,165,277"/>
-<area shape="rect" id="node16" href="$classProgViewerWidget.html" title="ProgViewerWidget" alt="" coords="189,246,317,277"/>
-<area shape="rect" id="node18" href="$classVDPMClientViewerWidget.html" title="VDPMClientViewerWidget" alt="" coords="341,246,512,277"/>
-<area shape="rect" id="node2" href="$classMeshViewerWidgetT.html" title="MeshViewerWidgetT\&lt; Mesh \&gt;" alt="" coords="127,86,324,117"/>
-<area shape="rect" id="node4" href="$classQGLViewerWidget.html" title="QGLViewerWidget" alt="" coords="277,6,403,37"/>
-<area shape="rect" id="node8" href="$classMeshViewerWidgetT.html" title="MeshViewerWidgetT\&lt; MyMesh \&gt;" alt="" coords="348,86,561,117"/>
-</map>

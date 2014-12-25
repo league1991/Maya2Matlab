@@ -219,7 +219,7 @@
 				AdditionalOptions="/subsystem:windows /incremental:no /machine:I386 /export:initializePlugin /export:uninitializePlugin"
 				AdditionalDependencies="Foundation.lib OpenMaya.lib OpenMayaUI.lib OpenGL32.lib libeng.lib libmat.lib libmx.lib QtGui4.lib QtCore4.lib QtNetwork4.lib"
 				OutputFile="Release\MatlabPlugin.mll"
-				AdditionalLibraryDirectories="$(MAYADIR)\lib"
+				AdditionalLibraryDirectories="&quot;$(MAYADIR)\lib&quot;;&quot;$(MATLABDIR)\extern\lib\win32\microsoft&quot;"
 				ProgramDatabaseFile="Release/MatlabPlugin.pdb"
 				ImportLibrary="Release/MatlabPlugin.lib"
 			/>

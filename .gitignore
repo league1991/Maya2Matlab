@@ -9,3 +9,4 @@ GeometryProcessing/src/ObjReader/Release/
 GeometryProcessing/src/ObjReader/Debug/
 GeometryProcessing.rar
 GeometryProcessing/src/MatlabPlugin/x64/
+*.exp

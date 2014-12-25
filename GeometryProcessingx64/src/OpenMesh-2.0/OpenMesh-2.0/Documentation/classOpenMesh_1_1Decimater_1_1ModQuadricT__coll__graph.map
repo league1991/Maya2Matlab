@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classOpenMesh_1_1Decimater_1_1ModBaseT.html" title="Base class for all decimation modules." alt="" coords="723,9,1056,39"/>
-<area shape="rect" id="node6" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; Geometry::QuadricT\&lt; double \&gt; \&gt;" alt="" coords="699,62,1080,93"/>
-<area shape="rect" id="node8" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; Geometry::QuadricT\&lt; double \&gt; \&gt;" alt="" coords="219,62,621,93"/>
-<area shape="rect" id="node10" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,62,168,93"/>
-</map>

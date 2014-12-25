@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classOpenMesh_1_1PolyMeshT.html" title="Base type for a polygonal mesh." alt="" coords="5,31,224,62"/>
-<area shape="rect" id="node3" href="$classOpenMesh_1_1PolyMesh__ArrayKernelT.html" title="Polygonal mesh based on the ArrayKernel." alt="" coords="272,5,560,35"/>
-<area shape="rect" id="node5" href="$classOpenMesh_1_1TriMeshT.html" title="Base type for a triangle mesh." alt="" coords="313,58,519,89"/>
-<area shape="rect" id="node7" href="$classOpenMesh_1_1Kernel__OSG_1_1TriMesh__OSGArrayKernelT.html" title="Triangle mesh based on the Kernel_OSG::ArrayKernelT." alt="" coords="609,31,993,62"/>
-<area shape="rect" id="node9" href="$classOpenMesh_1_1TriMesh__ArrayKernelT.html" title="Triangle mesh based on the ArrayKernel." alt="" coords="663,85,940,115"/>
-</map>

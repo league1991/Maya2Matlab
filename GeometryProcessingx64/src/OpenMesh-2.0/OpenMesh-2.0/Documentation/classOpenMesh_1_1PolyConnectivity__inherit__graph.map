@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node9" href="$classOpenMesh_1_1TriConnectivity.html" title="Connectifity Class for Triangle Meshes." alt="" coords="85,246,264,277"/>
-<area shape="rect" id="node2" href="$classOpenMesh_1_1ArrayKernel.html" title="Mesh kernel using arrays for mesh item storage." alt="" coords="95,86,255,117"/>
-<area shape="rect" id="node4" href="$classOpenMesh_1_1BaseKernel.html" title="This class provides the basic property management like adding/removing properties and access to prope..." alt="" coords="5,6,163,37"/>
-<area shape="rect" id="node6" href="$structOpenMesh_1_1ArrayItems.html" title="Definition of mesh items for use in the ArrayKernel." alt="" coords="187,6,344,37"/>
-</map>

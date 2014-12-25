@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$config_8hh_source.html" title="OpenMesh/Core/System/config.hh" alt="" coords="5,166,227,197"/>
-<area shape="rect" id="node7" href="$SubdividerT_8hh.html" title="OpenMesh/Tools/Subdivider/Uniform/SubdividerT.hh" alt="" coords="153,86,479,117"/>
-<area shape="rect" id="node13" href="$vector__cast_8hh_source.html" title="OpenMesh/Core/Utils/vector_cast.hh" alt="" coords="557,86,792,117"/>
-<area shape="rect" id="node10" href="$Noncopyable_8hh_source.html" title="OpenMesh/Core/Utils/Noncopyable.hh" alt="" coords="148,246,391,277"/>
-<area shape="rect" id="node16" href="$vector__traits_8hh_source.html" title="OpenMesh/Core/Utils/vector_traits.hh" alt="" coords="460,166,700,197"/>
-<area shape="rect" id="node19" href="$GenProg_8hh_source.html" title="OpenMesh/Core/Utils/GenProg.hh" alt="" coords="611,246,829,277"/>
-<area shape="rect" id="node29" href="$VectorT_8hh_source.html" title="OpenMesh/Core/Geometry/VectorT.hh" alt="" coords="969,166,1212,197"/>
-</map>

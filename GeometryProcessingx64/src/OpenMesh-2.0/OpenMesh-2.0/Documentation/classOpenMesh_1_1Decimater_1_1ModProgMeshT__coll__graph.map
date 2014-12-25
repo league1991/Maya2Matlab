@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classOpenMesh_1_1Decimater_1_1ModBaseT.html" title="Base class for all decimation modules." alt="" coords="716,9,1049,39"/>
-<area shape="rect" id="node8" href="$structOpenMesh_1_1Decimater_1_1ModProgMeshT_1_1Info.html" title="Struct storing progressive mesh information." alt="" coords="219,62,613,93"/>
-<area shape="rect" id="node10" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; int \&gt;" alt="" coords="776,115,989,146"/>
-<area shape="rect" id="node12" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; int \&gt;" alt="" coords="299,115,533,146"/>
-<area shape="rect" id="node14" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,115,168,146"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classOpenMesh_1_1Subdivider_1_1Uniform_1_1SubdividerT.html" title="Abstract base class for uniform subdivision algorithms." alt="" coords="632,5,1064,35"/>
-<area shape="rect" id="node4" href="$classOpenMesh_1_1Utils_1_1Noncopyable.html" title="This class demonstrates the non copyable idiom." alt="" coords="299,5,501,35"/>
-<area shape="rect" id="node8" href="$structOpenMesh_1_1VPropHandleT.html" title="OpenMesh::VPropHandleT\&lt; typename mesh_t::Point \&gt;" alt="" coords="677,111,1019,142"/>
-<area shape="rect" id="node10" href="$structOpenMesh_1_1BasePropHandleT.html" title="OpenMesh::BasePropHandleT\&lt; typename mesh_t::Point \&gt;" alt="" coords="219,133,581,163"/>
-<area shape="rect" id="node14" href="$structOpenMesh_1_1EPropHandleT.html" title="OpenMesh::EPropHandleT\&lt; typename mesh_t::Point \&gt;" alt="" coords="677,165,1019,195"/>
-<area shape="rect" id="node12" href="$classOpenMesh_1_1BaseHandle.html" title="Base class for all handle types." alt="" coords="5,133,168,163"/>
-</map>

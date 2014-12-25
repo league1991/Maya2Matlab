@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classOpenMesh_1_1IO_1_1BaseWriter.html" title="Base class for all writer modules." alt="" coords="5,111,184,142"/>
-<area shape="rect" id="node3" href="$classOpenMesh_1_1IO_1_1__OBJWriter__.html" title="This class defines the OBJ writer." alt="" coords="233,5,420,35"/>
-<area shape="rect" id="node5" href="$classOpenMesh_1_1IO_1_1__OFFWriter__.html" title="Implementation of the OFF format writer." alt="" coords="233,58,420,89"/>
-<area shape="rect" id="node7" href="$classOpenMesh_1_1IO_1_1__OMWriter__.html" title="Implementation of the OM format writer." alt="" coords="236,111,417,142"/>
-<area shape="rect" id="node9" href="$classOpenMesh_1_1IO_1_1__PLYWriter__.html" title="Implementation of the PLY format writer." alt="" coords="233,165,420,195"/>
-<area shape="rect" id="node11" href="$classOpenMesh_1_1IO_1_1__STLWriter__.html" title="Implementation of the STL format writer." alt="" coords="235,218,419,249"/>
-</map>
