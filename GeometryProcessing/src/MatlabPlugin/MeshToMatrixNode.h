@@ -32,6 +32,8 @@ public:
 	static  MObject		m_adjacencyMatrix;		// adjacency matrix from vertices
 	static  MObject		m_VEIncidenceMatrix;		// output incident matrix of vertices and edges (sparse)
 	static  MObject		m_VFIncidenceMatrix;		// output incident matrix of vertices and faces
+	static  MObject		m_cotLaplacianMatrix;		// cotangent Laplacian matrix
+	static  MObject		m_voronoiArea;				// voronoi area of each point
 	//static  MObject		m_EFIncidentMatrix;		// output incident matrix of edges    and faces
 
 	// The typeid is a unique 32bit indentifier that describes this node.
@@ -49,7 +51,16 @@ private:
 	MStatus				computeAdjacencyMatrix(MObject& meshObj);
 	MStatus				computePrincipleCurvature(MObject& meshObj);
 	MStatus             computeLocalFrameMatrix( MObject& mesh );		// compute normal, tangent, bitangent
+	MStatus				computeCotLaplacian(MObject& mesh);
 	MSpace::Space       getCurrentSpace();
+	MMatrix				getTransMat();
+	inline MPoint		getMeshPoint(int ithVtx, const MFnMesh& meshFn, const MMatrix& transMat, MSpace::Space space)
+	{
+		MPoint pos;
+		meshFn.getPoint(ithVtx, pos, space);
+		return pos * transMat;
+	}
+
 	static const char*  m_inMeshName[2];
 	static const char*  m_spaceName[2];
 	static const char*  m_transformMatrixName[2];
@@ -64,5 +75,7 @@ private:
 	static const char*  m_adjacencyMatrixName[2];
 	static const char*  m_VEIncidenceMatrixName[2];
 	static const char*  m_VFIncidenceMatrixName[2];
+	static const char*  m_cotLaplacianMatrixName[2];
+	static const char*	m_voronoiAreaName[2];
 	//static const char*  m_EFIncidentMatrixName[2];
 };

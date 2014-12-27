@@ -512,5 +512,11 @@ void MatlabNode::drawText()
 	} 
 }
 
+void MatlabNode::postConstructor()
+{
+	MFnDependencyNode nodeFn(thisMObject());
+	nodeFn.setName( "matlabShape#");
+}
+
 
 

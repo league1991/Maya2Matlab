@@ -55,6 +55,7 @@
 using Eigen::Affine;
 using namespace Eigen;
 
+#include <math.h>
 #include <vector>
 #include <map>
 #include <exception>
@@ -79,6 +80,7 @@ using namespace std;
 #include <QPainterPath>
 #include <QNetworkInterface>
 #include <QFont>
+#include <QVector3D>
 
 #include "globals.h"
 #include "MatrixData.h"

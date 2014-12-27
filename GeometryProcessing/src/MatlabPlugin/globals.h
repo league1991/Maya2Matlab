@@ -6,7 +6,9 @@
 #define MIN(a,b) ((a)<(b)?(a):(b))
 #define CLAMP_INT(minValue,maxValue,value) (MAX(int(minValue),MIN(int(value),int(maxValue))))
 #define CLAMP_FLOAT(minValue,maxValue,value) (MAX(float(minValue),MIN(float(value),float(maxValue))))
- 
+
+#define M_PI_2 1.57079632679489661923
+
 #define DATA_STREAM_VERSION    QDataStream::Qt_4_0
 
 #define CMD_MATLAB_ENGINE		"matlabEngine"

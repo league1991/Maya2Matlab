@@ -20,6 +20,9 @@ const char* MeshToMatrixNode::m_tangentMatrixName[2]    = {"tangentMatrix","tanM
 const char* MeshToMatrixNode::m_spaceName[2]			= {"space", "space"};
 const char* MeshToMatrixNode::m_transformMatrixName[2]  = {"transformMatrix", "transMat"};
 const char* MeshToMatrixNode::m_adjacencyMatrixName[2]  = {"adjacencyMatrix", "adjMat"};
+const char* MeshToMatrixNode::m_cotLaplacianMatrixName[2]={"cotLaplacianMatrix", "cotLapMat"};
+const char* MeshToMatrixNode::m_voronoiAreaName[2]      = {"voronoiArea", "vorArea"};
+
 
 MObject MeshToMatrixNode::m_transformMatrix;
 MObject MeshToMatrixNode::m_space;
@@ -36,6 +39,8 @@ MObject MeshToMatrixNode::m_normalMatrix;
 MObject MeshToMatrixNode::m_adjacencyMatrix;
 MObject MeshToMatrixNode::m_bitangentMatrix;
 MObject MeshToMatrixNode::m_tangentMatrix;
+MObject	MeshToMatrixNode::m_cotLaplacianMatrix;
+MObject	MeshToMatrixNode::m_voronoiArea;
 
 const char* MeshToMatrixNode::m_nodeName = NODE_MESH_TO_MATRIX_NAME;
 MTypeId     MeshToMatrixNode::m_id(NODE_MESH_TO_MATRIX_ID);
@@ -78,6 +83,10 @@ MStatus MeshToMatrixNode::compute( const MPlug& plug, MDataBlock& data )
 			 plug == m_minCurMatrix	   || plug == m_maxCurMatrix)
 	{
 		computePrincipleCurvature(mesh);
+	}
+	else if (plug == m_cotLaplacianMatrix || plug == m_voronoiArea)
+	{
+		computeCotLaplacian(mesh);
 	}
 	else{
 		return MS::kUnknownParameter;
@@ -324,6 +333,16 @@ MStatus MeshToMatrixNode::initialize()
 	tAttr.setHidden(false);
 	tAttr.setWritable(false);
 
+	m_cotLaplacianMatrix = tAttr.create(m_cotLaplacianMatrixName[0], m_cotLaplacianMatrixName[1], MFnData::kPlugin);
+	tAttr.setStorable(true);
+	tAttr.setHidden(false);
+	tAttr.setWritable(false);
+
+	m_voronoiArea = tAttr.create(m_voronoiAreaName[0], m_voronoiAreaName[1], MFnData::kPlugin);
+	tAttr.setStorable(true);
+	tAttr.setHidden(false);
+	tAttr.setWritable(false);
+
 	m_adjacencyMatrix = tAttr.create(m_adjacencyMatrixName[0], m_adjacencyMatrixName[1], MFnData::kPlugin);
 	tAttr.setStorable(true);
 	tAttr.setHidden(false);
@@ -396,6 +415,10 @@ MStatus MeshToMatrixNode::initialize()
 	CHECK_STATUS(stat);
 	stat = addAttribute( m_transformMatrix );
 	CHECK_STATUS(stat);
+	stat = addAttribute( m_cotLaplacianMatrix );
+	CHECK_STATUS(stat);
+	stat = addAttribute( m_voronoiArea );
+	CHECK_STATUS(stat);
 
 
 	// Set up a dependency between the input and the output.  This will cause
@@ -423,6 +446,10 @@ MStatus MeshToMatrixNode::initialize()
 	stat = attributeAffects( m_inMesh, m_minCurMatrix );
 	CHECK_STATUS(stat);
 	stat = attributeAffects( m_inMesh, m_maxCurMatrix );
+	CHECK_STATUS(stat);
+	stat = attributeAffects( m_inMesh, m_cotLaplacianMatrix );
+	CHECK_STATUS(stat);
+	stat = attributeAffects( m_inMesh, m_voronoiArea );
 	CHECK_STATUS(stat);
 	stat = attributeAffects( m_space, m_vertexMatrix );
 	CHECK_STATUS(stat);
@@ -619,6 +646,14 @@ MStatus MeshToMatrixNode::computePrincipleCurvature( MObject& meshObj )
 	return s;
 }
 
+MMatrix MeshToMatrixNode::getTransMat()
+{
+	MPlug transMatPlug = Global::getPlug(this, m_transformMatrixName[0]);
+	MObject transMatObject = transMatPlug.asMObject();
+	MFnMatrixData transMatData(transMatObject);
+	return transMatData.matrix();
+}
+
 MStatus MeshToMatrixNode::computeLocalFrameMatrix( MObject& meshObj )
 {
 	MStatus s;
@@ -726,6 +761,188 @@ MSpace::Space MeshToMatrixNode::getCurrentSpace()
 	default:return MSpace::kObject;
 	}
 }
+
+MStatus MeshToMatrixNode::computeCotLaplacian( MObject& meshObj)
+{
+	MStatus s;
+	MFnMesh meshFn(meshObj, &s);
+	CHECK_STATUS(s);
+
+	MMatrix transMat = getTransMat();
+	MSpace::Space space = getCurrentSpace();
+	if (space == MSpace::kObject)
+		transMat.setToIdentity();
+
+	const int nVertices = meshFn.numVertices(&s);
+	const int nEdges    = meshFn.numEdges(&s);
+	if (nVertices <= 0 || nEdges <= 0)
+		return MS::kFailure;
+
+	// create matlab matrix obj
+	MObject matObj;
+	MatlabMatrix* matPtr;
+	if (MS::kSuccess != MatlabMatrix::createMatrixObject(matObj, matPtr))
+	{
+		return MS::kFailure;
+	}
+	MObject areaObj;
+	MatlabMatrix* areaPtr;
+	if (MS::kSuccess != MatlabMatrix::createMatrixObject(areaObj, areaPtr))
+	{
+		return MS::kFailure;
+	}
+
+	// 分配数据
+	int nElements = nVertices + nEdges * 2;
+	double * dataBuffer = new double[nElements];
+	mwIndex * rowIDBuffer= new mwIndex[nElements];
+	mwIndex * rowRangeBuffer = new mwIndex[nVertices+1];
+	double* pData = dataBuffer;
+	mwIndex   * pRowID = rowIDBuffer;
+	mwIndex   * pRowRange = rowRangeBuffer;
+	*(pRowRange++) = 0;
+	double* areaBuffer = new double[nVertices]; 
+
+	// 构建拉普拉斯矩阵
+	double* colMap = new double[nVertices];
+	for (int i = 0; i < nVertices; ++i)
+		colMap[i] = 0.0;
+
+	struct NearPoint
+	{
+		int id;
+		MVector pos;
+		double cotPrev, cotNext;
+	};
+	vector<NearPoint>nearPoints;
+	nearPoints.reserve(20);
+
+	MItMeshVertex it(meshObj, &s);
+	int nthVertex = 0;
+	for (; !it.isDone(&s); it.next(),nthVertex++)
+	{
+
+		MPoint p = getMeshPoint(nthVertex, meshFn, transMat, space);
+		const MVector centerPoint(p.x, p.y, p.z);
+
+		// 记录邻点坐标
+		MIntArray adjID;
+		it.getConnectedVertices(adjID);
+		nearPoints.clear();
+		int nthNeighbour;
+		for (nthNeighbour = 0; nthNeighbour < adjID.length(); ++nthNeighbour)
+		{
+			int nearVertID = adjID[nthNeighbour]; //vertexIDMap[itNear.handle()];
+			MPoint nearPnt = getMeshPoint(nearVertID, meshFn, transMat, space);
+			NearPoint nearPoint;
+			nearPoint.id  = nearVertID;
+			nearPoint.pos = MVector(nearPnt.x, nearPnt.y, nearPnt.z);
+			nearPoints.push_back(nearPoint);
+		}
+
+		// 计算邻点正切值
+		int nNeighbours = nthNeighbour;
+		for (nthNeighbour = 0; nthNeighbour < nNeighbours; ++nthNeighbour)
+		{
+			int nextIdx = (nthNeighbour + 1) % nNeighbours;
+			int prevIdx = (nthNeighbour + nNeighbours - 1) % nNeighbours;
+			MVector& curPoint= nearPoints[nthNeighbour].pos;
+			MVector nextDir = nearPoints[nextIdx].pos - curPoint;
+			MVector prevDir = nearPoints[prevIdx].pos - curPoint;
+			MVector centerDir= centerPoint - curPoint;
+			nextDir.normalize();
+			prevDir.normalize();
+			centerDir.normalize();
+			double cosNext = centerDir* nextDir;
+			double cosPrev = centerDir* prevDir;
+			nearPoints[nthNeighbour].cotPrev = tan(M_PI_2 - acos(cosPrev));
+			nearPoints[nthNeighbour].cotNext = tan(M_PI_2 - acos(cosNext));
+			double c = tan(M_PI_2 - acos(cosPrev));
+			c = tan(M_PI_2 - acos(cosNext));
+		}
+
+		// 计算拉普拉斯矩阵值
+		double totalCot = 0;
+		double totalArea = 0;
+		for (nthNeighbour = 0; nthNeighbour < nNeighbours; ++nthNeighbour)
+		{
+			int nextIdx = (nthNeighbour + 1) % nNeighbours;
+			int prevIdx = (nthNeighbour + nNeighbours - 1) % nNeighbours;
+			double cotValue = -0.5 * (nearPoints[nextIdx].cotPrev + nearPoints[prevIdx].cotNext);
+			colMap[nearPoints[nthNeighbour].id] = cotValue;
+			totalCot += cotValue;
+
+			// 计算面积
+			MVector& curPoint= nearPoints[nthNeighbour].pos;
+			MVector& nextPoint = nearPoints[nextIdx].pos;
+			MVector  curDir  = curPoint - centerPoint;
+			MVector  nextDir = nextPoint - centerPoint;
+			double curLength    = curDir.length();
+			double nextLength   = nextDir.length();
+			double cosAngle     = curDir * nextDir / (curLength * nextLength);
+			double sinAngle     = sqrt(1 - cosAngle * cosAngle);
+			double area;
+			if (curDir * (curDir - nextDir) < 0 ||
+				nextDir* (nextDir - curDir) < 0)
+				area = curLength * nextLength * sinAngle * 0.25f; // 钝角三角形
+			else if(cosAngle < 0.f)					
+				area = curLength * nextLength * sinAngle * 0.5f; // 钝角三角形
+			else
+			{
+				double chordLength  = (nextDir - curDir).length();
+				double radius       = chordLength / sinAngle * 0.5;
+				double halfCurLength = curLength  * 0.5;
+				double halfNextLength= nextLength * 0.5;
+				double curHeight    = sqrt(radius * radius - halfCurLength * halfCurLength);
+				double nextHeight   = sqrt(radius * radius - halfNextLength * halfNextLength);
+				area = 0.5 * (halfCurLength * curHeight + halfNextLength * nextHeight);
+			}
+			totalArea += area;
+
+		}
+		colMap[nthVertex] = -totalCot;
+		areaBuffer[nthVertex] = totalArea;
+
+		for (int i = 0; i < nVertices; ++i)
+		{
+			if (colMap[i] != 0.0)
+			{
+				*(pData++) = colMap[i];
+				colMap[i] = 0.0;
+				*(pRowID++) = i;
+			}
+		}
+		*(pRowRange++) = pData - dataBuffer;
+	}
+
+	/*
+	if (areaWeighted)
+	{
+		for (int ithElement = 0; ithElement < nElements; ++ithElement)
+		{
+			mwIndex ithRow = rowIDBuffer[ithElement];
+			dataBuffer[ithElement] /= areaBuffer[ithRow];
+		}
+	}*/
+	delete[] colMap;
+
+	matPtr->getMatrix().setSparseDataPtr(
+		dataBuffer, rowIDBuffer, rowRangeBuffer, 
+		nVertices, nVertices, 
+		nVertices + nEdges*2, nVertices+1, 
+		MatrixData::DT_DOUBLE);
+
+	areaPtr->getMatrix().setDenseDataPtr(areaBuffer, nVertices, 1, MatrixData::DT_DOUBLE);
+
+	// set object
+	MPlug lapMatPlug = getPlug(m_cotLaplacianMatrixName[0]);
+	lapMatPlug.setValue(matObj);
+	MPlug areaPlug   = getPlug(m_voronoiAreaName[0]);
+	areaPlug.setValue(areaObj);
+
+	return s;
+}
+
 
 
 
